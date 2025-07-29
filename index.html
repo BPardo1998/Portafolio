@@ -5,92 +5,433 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - Brandon Pardo</title>
   <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
   <div class="background-overlay"></div>
 
-  <header class="hero">
-    <h1>👋 Hola, soy <span class="resaltado">Brandon Pardo</span></h1>
-    <p>Desarrollador Frontend | HTML, CSS, JavaScript</p>
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">BP</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>👋 Hola, soy Brandon Pardo</h1>
+        <p class="hero-subtitle">Desarrollador Full Stack | HTML, CSS, JavaScript, React, Python, Flask, IA</p>
+        <p class="hero-description">Creando experiencias digitales atractivas y funcionales</p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Años Exp.</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Responsive</span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <section class="seccion" id="sobre-mi">
-    <h2>Sobre Mí</h2>
-    <p>Apasionado por el desarrollo frontend y las experiencias digitales atractivas. Con formación en ingeniería naval y gerencia de proyectos.</p>
+    <div class="section-header">
+      <h2><i class="fas fa-user"></i> Sobre Mí</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Apasionado por el desarrollo frontend y las experiencias digitales atractivas. Con formación en ingeniería naval y gerencia de proyectos, combino mi experiencia técnica con una visión creativa para crear soluciones web innovadoras.</p>
+        <p>Me especializo en crear interfaces intuitivas y responsivas que proporcionan una excelente experiencia de usuario.</p>
+      </div>
+      <div class="about-cards">
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>Desarrollo Web</h3>
+          <p>HTML5, CSS3, JavaScript, React, Python, Flask, APIs REST, OpenAI API, Unsplash API, python-pptx, Render, GitHub Pages</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Responsive Design</h3>
+          <p>Diseño adaptable</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-rocket"></i>
+          <h3>Optimización</h3>
+          <p>Rendimiento y SEO</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="seccion" id="proyectos">
-    <h2>💼 Proyectos</h2>
+    <div class="section-header">
+      <h2><i class="fas fa-briefcase"></i> Proyectos</h2>
+      <div class="section-line"></div>
+    </div>
 
     <div class="proyecto">
-      <h3>Marketplace</h3>
-      <p>Sitio de compra de elemntos con pasarela de pagos personalizada.</p>
-      <div class="galeria">
-        <img src="./kitchenmaster/fotografia1.png" alt="Inicio">
-        <img src="./kitchenmaster/fotografia 2.png" alt="Productos">
-        <img src="./kitchenmaster/fotografia 3.png" alt="Productos">
-        <img src="./kitchenmaster/fotografia 4.png" alt="Proyecto 4">
-        <img src="./kitchenmaster/fotografia 5.png" alt="Proyecto 5">
-        <img src="./kitchenmaster/fotografia 6.png" alt="Proyecto 5">
+      <div class="proyecto-header">
+        <h3><i class="fas fa-shopping-cart"></i> Marketplace</h3>
+        <div class="proyecto-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
       </div>
-      <a href="https://bpardo1998.github.io/Kitchen_master1/" class="btn">Ver Proyecto</a>
+      <p>Sitio de compra de elementos con pasarela de pagos personalizada.</p>
+      <div class="galeria">
+        <img src="./kitchenmaster/fotografia1.png" alt="Inicio" loading="lazy">
+        <img src="./kitchenmaster/fotografia 2.png" alt="Productos" loading="lazy">
+        <img src="./kitchenmaster/fotografia 3.png" alt="Productos" loading="lazy">
+        <img src="./kitchenmaster/fotografia 4.png" alt="Proyecto 4" loading="lazy">
+        <img src="./kitchenmaster/fotografia 5.png" alt="Proyecto 5" loading="lazy">
+        <img src="./kitchenmaster/fotografia 6.png" alt="Proyecto 6" loading="lazy">
+      </div>
+      <div class="proyecto-actions">
+        <a href="https://bpardo1998.github.io/Kitchen_master1/" class="btn btn-primary" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Ver Proyecto
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
     </div>
+
     <div class="proyecto">
-      <h3>Landing Page</h3>
-      <p>Sitio web utilizado para captar la atención de los visitantes y combertirlos en clientes potenciales.</p>
-      <div class="galeria">
-        <img src="./bitcoin/imagen 1.png" alt="Inicio">
-        <img src="./bitcoin/imagen 2.png" alt="Productos">
-        <img src="./bitcoin/imagen 3.png" alt="Productos">
-        <img src="./bitcoin/imagen 4.png" alt="Proyecto 4">
+      <div class="proyecto-header">
+        <h3><i class="fas fa-chart-line"></i> Landing Page</h3>
+        <div class="proyecto-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
       </div>
-      <a href="https://bpardo1998.github.io/Moneda/" class="btn">Ver Proyecto</a>
+      <p>Sitio web utilizado para captar la atención de los visitantes y convertirlos en clientes potenciales.</p>
+      <div class="galeria">
+        <img src="./bitcoin/imagen 1.png" alt="Inicio" loading="lazy">
+        <img src="./bitcoin/imagen 2.png" alt="Productos" loading="lazy">
+        <img src="./bitcoin/imagen 3.png" alt="Productos" loading="lazy">
+        <img src="./bitcoin/imagen 4.png" alt="Proyecto 4" loading="lazy">
+      </div>
+      <div class="proyecto-actions">
+        <a href="https://bpardo1998.github.io/Moneda/" class="btn btn-primary" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Ver Proyecto
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
     </div>
+
     <div class="proyecto">
-      <h3>Marketplace</h3>
-      <p>Sitio web utilizado compra de utencilios.</p>
-      <div class="galeria">
-        <img src="./marketplace/foto1.png" alt="Inicio">
-        <img src="./marketplace/foto2.png" alt="Productos">
-        <img src="./marketplace/foto3.png" alt="Productos">
+      <div class="proyecto-header">
+        <h3><i class="fas fa-store"></i> Marketplace</h3>
+        <div class="proyecto-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
       </div>
-      <a href="#" class="btn">Ver Proyecto</a>
+      <p>Sitio web para compra de utensilios con interfaz moderna y funcional.</p>
+      <div class="galeria">
+        <img src="./marketplace/foto1.png" alt="Inicio" loading="lazy">
+        <img src="./marketplace/foto2.png" alt="Productos" loading="lazy">
+        <img src="./marketplace/foto3.png" alt="Productos" loading="lazy">
+      </div>
+      <div class="proyecto-actions">
+        <a href="https://bpardo1998.github.io/Porductos-de-aseo/" class="btn btn-primary">
+          <i class="fas fa-external-link-alt"></i> Ver Proyecto
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
     </div>
-        <div class="proyecto">
-      <h3>Marketplace</h3>
-      <p>Sitio web utilizado compra de diversos elementos, para compradores impulsivos.</p>
-      <div class="galeria">
-        <img src="./marketplace2/foto No1.png" alt="Inicio">
-        <img src="./marketplace2/foto No2.png" alt="Productos">
-        <img src="./marketplace2/foto No3.png" alt="Productos">
-        <img src="./marketplace2/foto No4.png" alt="Productos">
-        <img src="./marketplace2/foto nO5.png" alt="Productos">
-        <img src="./marketplace2/foto No6.png" alt="Productos">
+
+    <div class="proyecto">
+      <div class="proyecto-header">
+        <h3><i class="fas fa-tshirt"></i> Tienda Deportiva</h3>
+        <div class="proyecto-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
       </div>
-      <a href="https://bpardo1998.github.io/Tienda-deportiva/" class="btn">Ver Proyecto</a>
+      <p>Sitio web para compra de diversos elementos deportivos, diseñado para compradores impulsivos.</p>
+      <div class="galeria">
+        <img src="./marketplace2/foto No1.png" alt="Inicio" loading="lazy">
+        <img src="./marketplace2/foto No2.png" alt="Productos" loading="lazy">
+        <img src="./marketplace2/foto No3.png" alt="Productos" loading="lazy">
+        <img src="./marketplace2/foto No4.png" alt="Productos" loading="lazy">
+        <img src="./marketplace2/foto nO5.png" alt="Productos" loading="lazy">
+        <img src="./marketplace2/foto No6.png" alt="Productos" loading="lazy">
+      </div>
+      <div class="proyecto-actions">
+        <a href="https://bpardo1998.github.io/Tienda-deportiva/" class="btn btn-primary" target="_blank">
+          <i class="fas fa-external-link-alt"></i> Ver Proyecto
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
+    </div>
+
+    <div class="proyecto">
+      <div class="proyecto-header">
+        <h3><i class="fas fa-robot"></i> Generador de Diapositivas IA</h3>
+        <div class="proyecto-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">IA</span>
+          <span class="tag">Python</span>
+          <span class="tag">GitHub Pages</span>
+          <span class="tag">Flask</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Unsplash API</span>
+          <span class="tag">python-pptx</span>
+          <span class="tag">Render</span>
+        </div>
+      </div>
+      <p>Aplicación web que utiliza inteligencia artificial para generar presentaciones profesionales automáticamente. Permite crear diapositivas personalizadas con contenido relevante y diseño atractivo.</p>
+      <div class="galeria">
+        <img src="./Generador_de_presentaciones/foto1 (1).png" alt="Interfaz Principal" loading="lazy">
+        <img src="./Generador_de_presentaciones/foto2.png" alt="Generación de Contenido" loading="lazy">
+        <img src="./Generador_de_presentaciones/foto3.png" alt="Editor de Diapositivas" loading="lazy">
+        <img src="./Generador_de_presentaciones/foto4.png" alt="Vista Previa" loading="lazy">
+        <img src="./Generador_de_presentaciones/foto5.png" alt="Exportación" loading="lazy">
+      </div>
+      <div class="proyecto-actions">
+        <a href="https://bpardo1998.github.io/Auto-Plantillas/" class="btn btn-primary">
+          <i class="fas fa-external-link-alt"></i> Ver Proyecto
+        </a>
+        <a href="#" class="btn btn-secondary">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
     </div>
   </section>
+
   <section class="seccion" id="habilidades">
-    <h2>🛠️ Habilidades</h2>
-    <ul class="habilidades">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Git & GitHub</li>
-    </ul>
+    <div class="section-header">
+      <h2><i class="fas fa-tools"></i> Habilidades</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-server"></i> Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-flask"></i>
+            <span>Flask</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>APIs REST</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-robot"></i>
+            <span>OpenAI API</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-mobile-alt"></i> Diseño & UX</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-tablet-alt"></i>
+            <span>Responsive Design</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-palette"></i>
+            <span>UI/UX Design</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-search"></i>
+            <span>SEO</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-cogs"></i> Herramientas & DevOps</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <span>Git & GitHub</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-terminal"></i>
+            <span>Terminal</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code-branch"></i>
+            <span>Control de Versiones</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cloud"></i>
+            <span>Render</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-server"></i>
+            <span>GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> Inteligencia Artificial</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-robot"></i>
+            <span>OpenAI API</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-image"></i>
+            <span>Unsplash API</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-file-powerpoint"></i>
+            <span>python-pptx</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-magic"></i>
+            <span>Generación de Contenido IA</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="seccion" id="contacto">
-    <h2>📬 Contacto</h2>
-    <p>Email: <a href="mailto:pardob749@gmail.com">pardob749@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/BPardo1998" target="_blank">@BPardo1998</a></p>
+    <div class="section-header">
+      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:pardob749@gmail.com">pardob749@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/BPardo1998" target="_blank">@BPardo1998</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <span>Colombia</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>¿Tienes un proyecto en mente?</h3>
+        <p>¡Hablemos sobre cómo puedo ayudarte a hacerlo realidad!</p>
+        <a href="https://wa.me/573225023293?text=Hola%20Brandon,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo%20sobre%20un%20proyecto." class="btn btn-primary" target="_blank" id="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+        </a>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 Brandon Pardo. Todos los derechos reservados.</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Brandon Pardo</h3>
+        <p>Desarrollador Frontend apasionado por crear experiencias digitales únicas.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociales</h3>
+        <div class="social-links">
+          <a href="https://github.com/BPardo1998" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:pardob749@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Brandon Pardo. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
